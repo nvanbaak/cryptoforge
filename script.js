@@ -1,5 +1,7 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+var lengthSlider = document.getElementById("lengthInput");
+var lengthOutput = document.getElementById("lengthOutput");
 
 // Write password to the #password input
 function writePassword() {
@@ -13,10 +15,7 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-
-var lengthSlider = document.getElementById("lengthInput");
-var lengthOutput = document.getElementById("lengthOutput");
-
+// Update the password length output whenever the length slider changes
 lengthSlider.oninput = function() {
     lengthOutput.innerHTML = this.value;
 }
