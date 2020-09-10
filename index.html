@@ -37,7 +37,19 @@
 
                     <!-- Card body -->
                     <div class="card-body">
-                        <textarea readonly id="password" placeholder="Your Secure Password"
+                        <!-- Settings area -->
+                        <h3>Settings</h3>
+                        
+                        <!-- Slider bar -->
+                        <label for="lengthInput">Password Length: <span id="lengthOutput">24</span></label>
+                        <input type="range" min="8" max="128" value="24" class="slider" id="lengthInput">
+
+
+
+
+                        <hr>
+                        <!-- Password field -->
+                        <textarea readonly id="password" placeholder="Speak friend and enter"
                             aria-label="Generated Password"></textarea>
                     </div>
 
@@ -52,6 +64,7 @@
         </div>
     </main>
 
+    <!-- Bootstrap links -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
@@ -62,6 +75,7 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
 
+    <!-- Custom script -->
     <script src="script.js"></script>
 
 </body>
