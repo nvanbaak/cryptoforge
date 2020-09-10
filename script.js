@@ -45,31 +45,37 @@ function generatePassword() {
     // lowercase
     if ( document.getElementById("lowercaseCheck").checked ) {
 
-        sampleArray.concat(lowercaseArray);
+        sampleArray = sampleArray.concat(lowercaseArray);
+        console.log(sampleArray);
     }
 
     // uppercase
     if ( document.getElementById("uppercaseCheck").checked ) {
 
-        sampleArray.concat(uppercaseArray);
+        sampleArray = sampleArray.concat(uppercaseArray);
+        console.log(sampleArray);
     }
 
     // numbers
     if ( document.getElementById("numberCheck").checked ) {
 
-        sampleArray.concat(numberArray);
+        sampleArray = sampleArray.concat(numberArray);
+        console.log(sampleArray);
     }
 
     // special characters
     if ( document.getElementById("specialCheck").checked ) {
 
-        sampleArray.concat(specialArray);
+        sampleArray = sampleArray.concat(specialArray);
+        console.log(sampleArray);
     }
 
 
     // once the sampling array is generated, we sample it to assemble the password
 
+    // define output variable
     var output = "";
+
 
     for (i=0; i < lengthSlider.value; i++) {
 
