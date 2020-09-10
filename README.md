@@ -1,55 +1,31 @@
-# 03 JavaScript: Password Generator
+# Cryptoforge
+## An awesome name for a modest widget
 
-Create an application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
+Cryptoforge is a simple password generator.  It has nothing to do with cryptocurrency.  I just liked the name.
 
-If you are unfamiliar with special characters, take a look at [some examples](https://www.owasp.org/index.php/Password_special_characters).
+Cryptoforge has the following stand-out features:
+* A really sweet aesthetic
+* Passwords are generated based on user-selected character pool
+* The app yells at you if you try to generate a password without selecting any characters
+* The slider bar is 100% more metal than any of our competitors
 
-## User Story
+## Cryptoforge in action
 
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
+### Password generation only uses selected character pools
 
-## Acceptance Criteria
+<img src="./Assets/readme-sample-password-1.png" alt="password using only lowercase and numbers">
+<img src="./Assets/readme-sample-password-2.png" alt="password using lowercase, numbers, and special characters">
 
-```
-GIVEN I need a new, secure password
+Password length is determined by the slider.
 
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
+### Users get an error message if they don't use any of the character pools
 
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
+<img src="./Assets/readme-null-password.png" alt="error message after attempted generation">
 
-<!-- WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters -->
+### Come on, you know it looks cool
 
-<!-- WHEN prompted for character types to include in the password
-THEN I choose lowercase, uppercase, numeric, and/or special characters -->
+<img src="./Assets/readme-full-screenshot.png" alt="trust me it looks beautiful">
 
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
+## Check out the website!
 
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
-
-The following image demonstrates the application functionality:
-
-![password generator demo](./Assets/03-javascript-homework-demo.png)
-
-## Review
-
-You are required to submit the following for review:
-
-* The URL of the deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
-
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+> https://nvanbaak.github.io/cryptoforge/
