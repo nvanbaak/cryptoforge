@@ -24,22 +24,28 @@ body {
   text-align: center;
 }
 
-h2 {
+h2, h3, h4, label {
     color: azure;
-    font-size: 50px;
     text-shadow: 0px 0px 6px orange;
+}
+
+h2 {
+    font-size: 50px;
+    text-align: center;
 }
 
 h3 {
-    color: azure;
     text-align: center;
-    text-shadow: 0px 0px 6px orange;
+}
+
+#lengthLabel {
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
 }
 
 label {
-    color: azure;
-    text-shadow: 0px 0px 6px yellow;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 #lengthOutput {

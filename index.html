@@ -23,7 +23,7 @@
 
     <main class="container">
 
-        <div class="row mt-5">
+        <div class="row">
 
             <div class="col"></div>
             <div class="col-8">
@@ -40,17 +40,44 @@
                         <!-- Settings area -->
                         <h3>Settings</h3>
 
+                        <!-- This section is two columns for space efficiency reasons -->
                         <div class="row">
-                            <div class="col"></div>
+                            <div class="col">
+
+                                <!-- Character selection checkboxes -->
+                                <h4>Choose character types to use:</h4>
+
+                                <!-- Lowercase -->
+                                <div class="form-check">
+                                    <input type="checkbox" id="lowercaseCheck">
+                                    <label for="lowercaseCheck">Lowercase letters</label>
+                                </div>
+
+                                <!-- Uppercase -->
+                                <div class="form-check">
+                                    <input type="checkbox" id="uppercaseCheck">
+                                    <label for="uppercaseCheck">Uppercase letters</label>
+                                </div>
+
+                                <!-- Numbers -->
+                                <div class="form-check">
+                                    <input type="checkbox" id="numberCheck">
+                                    <label for="numberCheck">Numbers</label>
+                                </div>
+
+                                <!-- Special Characters -->
+                                <div class="form-check">
+                                    <input type="checkbox" id="specialCheck">
+                                    <label for="specialCheck">Special Characters</label>
+                                </div>
+                            </div>
                             <div class="col"></div>
                         </div>
-                        
+
+
                         <!-- Slider bar -->
-                        <label for="lengthInput">Password Length: <span id="lengthOutput">24</span></label>
+                        <label id="lengthLabel" >Password Length: <span id="lengthOutput">24</span></label>
                         <input type="range" min="8" max="128" value="24" class="slider" id="lengthInput">
-
-
-
 
                         <hr>
                         <!-- Password field -->
@@ -67,6 +94,8 @@
             <div class="col"></div>
 
         </div>
+
+
     </main>
 
     <!-- Bootstrap links -->
