@@ -46,28 +46,24 @@ function generatePassword() {
     if ( document.getElementById("lowercaseCheck").checked ) {
 
         sampleArray = sampleArray.concat(lowercaseArray);
-        console.log(sampleArray);
     }
 
     // uppercase
     if ( document.getElementById("uppercaseCheck").checked ) {
 
         sampleArray = sampleArray.concat(uppercaseArray);
-        console.log(sampleArray);
     }
 
     // numbers
     if ( document.getElementById("numberCheck").checked ) {
 
         sampleArray = sampleArray.concat(numberArray);
-        console.log(sampleArray);
     }
 
     // special characters
     if ( document.getElementById("specialCheck").checked ) {
 
         sampleArray = sampleArray.concat(specialArray);
-        console.log(sampleArray);
     }
 
 
@@ -76,10 +72,11 @@ function generatePassword() {
     // define output variable
     var output = "";
 
-
+    // add letters to the output until we hit the slider length
     for (i=0; i < lengthSlider.value; i++) {
 
-        output = output + sampleArray[i];
+        // grab a random character from the array, add it to the output
+        output = output + sampleArray[Math.floor(Math.random() * sampleArray.length)];
 
     }
 
