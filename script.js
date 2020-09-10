@@ -32,20 +32,42 @@ function writePassword() {
 // generates a password based on the user-selected settings
 function generatePassword() {
 
+    // define our variables
     var lowercaseArray = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
     var uppercaseArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
     var numberArray = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
     var specialArray = ["~", "!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "-", "+", "_", "+"];
 
+    // generate the character array to sample from
+    // we do this by adding each array to the sample based on whether the user checked the appropriate box
     var sampleArray = [];
 
-    var useLowercase = document.getElementById("lowercaseCheck").checked;
-    var useUppercase = document.getElementById("uppercaseCheck").checked;
-    var useNumbers = document.getElementById("numberCheck").checked;
-    var useSpecials = document.getElementById("specialCheck").checked;
+    // lowercase
+    if ( document.getElementById("lowercaseCheck").checked ) {
 
-    sampleArray = lowercaseArray.concat(uppercaseArray)
+        sampleArray.concat(lowercaseArray);
+    }
 
+    // uppercase
+    if ( document.getElementById("uppercaseCheck").checked ) {
+
+        sampleArray.concat(uppercaseArray);
+    }
+
+    // numbers
+    if ( document.getElementById("numberCheck").checked ) {
+
+        sampleArray.concat(numberArray);
+    }
+
+    // special characters
+    if ( document.getElementById("specialCheck").checked ) {
+
+        sampleArray.concat(specialArray);
+    }
+
+
+    // once the sampling array is generated, we sample it to assemble the password
 
     var output = "";
 
